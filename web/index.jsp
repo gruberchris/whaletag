@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" import="java.util.*" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" import="java.net.*" %>
 <html>
 <head>
   <title>Whale Tag</title>
@@ -13,7 +13,7 @@
   <div class="container">
     <div class="centered text-center">
       <ul class="list-group">
-        <li class="list-group-item bg-light text-dark">Host Name : <%= java.net.InetAddress.getLocalHost().getHostName() %></li>
+        <li class="list-group-item bg-light text-dark">Host Name : <%= InetAddress.getLocalHost().getHostName() %></li>
         <li class="list-group-item bg-light text-dark">Server Version : <%= application.getServerInfo() %></li>
         <li class="list-group-item bg-light text-dark">Servlet Version : <%= application.getMajorVersion() %>.<%= application.getMinorVersion() %></li>
         <li class="list-group-item bg-light text-dark">JSP Version : <%= JspFactory.getDefaultFactory().getEngineInfo().getSpecificationVersion() %></li>
