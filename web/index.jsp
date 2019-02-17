@@ -20,5 +20,12 @@
       </ul>
     </div>
   </div>
+  <div class="container" style="margin-top: 15px;">
+      <div class="centered text-center">
+          <ul class="list-group">
+              <li class="list-group-item bg-light text-dark">Your IP Address : <%= request.getRemoteAddr() %></li>
+          </ul>
+      </div>
+  </div>
 </body>
 </html>
